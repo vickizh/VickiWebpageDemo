@@ -1,0 +1,1018 @@
+<% include header.ejs %>
+
+<div class="container body">
+
+ <div class="x_content">
+     <form action="http://localhost:3000/process_post" method="post" id="all">
+  <div class="table-responsive">
+      <!--<form action="/test" method="post" id="all">-->
+   <table class="table table-striped jambo_table bulk_action">
+    <tr class="headings">
+     <th class="column-title"></th>
+     <th class="column-title"></th>
+     <th class="column-title"></th>
+     <th class="column-title"></th>
+     <th class="column-title no-link last"></th>
+     <th class="column-title">Department</th>
+     <th class="column-title" bgcolor="#FFFF00">
+      <select name="Doption">
+       <option></option>
+       <option value="GBS">GBS</option>
+       <option value="GTS">GTS</option>
+       <option value="Cloud">Cloud</option>
+       <option value="System">System</option>
+       <option value="SW">SW</option>
+       <option value="STG">STG</option>
+       <option value="ETC">ETC</option>
+      </select>
+     </th>
+    </tr>
+    <tr class="headings">
+     <th class="column-title"></th>
+     <th class="column-title"></th>
+     <th class="column-title">Major skills Area:
+     </th>
+     <th class="column-title"></th>
+     <th class="column-title"></th>
+     <th class="column-title"> </th>
+     <th class="column-title no-link last" bgcolor="#FFFF00">Boxes shaded with this color are for your input</th>
+    </tr>
+    <tr class="even pointer">
+     <td class=" "></td>
+     <td class=" ">Production/Solutions</td>
+     <td class=" ">Solution/ Design
+      (See Note1)
+      (Y/N)</td>
+     <td class=" ">Delivery
+      (See Note1)
+      (Y/N)</td>
+     <td class=" ">Development
+      (See Note1)
+      (Y/N)</td>
+     <td class="a-right a-right ">Remarks</td>
+     <td class=" last">Note1:
+      Solution/Design:  Designing and Architecting Solution
+      Delivery: Implementation of Solution (Installation/ Configuration/ Realization of the solution as a whole etc)
+      Development: Knowledge of development/programming and use of corresponding APIs/libraries etc to development applications on top of the respective Products/Solutions</td>
+    </tr>
+    <tr class="even pointer">
+     <td rowspan="4">Application, Solutions and Services</td>
+     <td class=" ">Payment</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="PSSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select  name="PSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="PSDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last">Payment: Integrate and orchestrate cmmercial and retail transaction processing within(say) banking platform.</td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Blockchain</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="BSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="BDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="BDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">FSS</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="FSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="FDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select></td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="FDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select></td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">SaaS-based Solution
+      (Please Specify in the Remark Cell)</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="SaSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="SaDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="SaDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last">There are numerious IBM SaaS based solution in various industries.  If you put an "Y" in this row, please specify in the "Remarks" cell what SaaS based solution(s) you are referring to.</td>
+    </tr>
+
+
+
+    <tr class="even pointer">
+     <td rowspan="4">AI/Cognitive</td>
+     <td class=" ">Machine/Deep Learning</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="MDSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="MDDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="MDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Watson Generic Services</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="WGSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="WGDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="WGDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Content Analytics</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="CASDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="CADoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="CADtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Watson Service - ChatBot</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="WSSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="WSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="WSDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last">
+     </td>
+    </tr>
+
+
+
+    <tr class="even pointer">
+     <td rowspan="5">Data</td>
+     <td class=" ">Tradition Database</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="TDSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="TDDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="TDDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Big Data Infrastrcuture</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="BDSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="BDDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="BDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last">
+     </td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Information Integration</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="IISDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="IIDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="IIDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">SGovernance</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="SGSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="SGDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="SGDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select></td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">NoSQL Database</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="NDSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="NDDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="NDDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+
+
+    <tr class="even pointer">
+     <td rowspan="6">Cloud</td>
+     <td class=" ">Container/Microservice</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="CMSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="CMDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="CMDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select></td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">BlueMix</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="BMSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="BMDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="BMDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select></td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">DevOps</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="DOSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="DODoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select></td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="DODtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select></td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Infrastructure-HW</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="IHSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="IHDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select></td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="IHDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select></td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Infrastructure-SW</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="ISSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="ISDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="ISDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Virtualization</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="ISSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="ISDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select></td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="ISDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select></td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+
+
+
+    <tr class="even pointer">
+     <td rowspan="10">Platform</td>
+     <td class=" ">MF HW</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="MHSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="MHDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select></td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="MHDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select></td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">MF SW</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="MSSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="MSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="MSDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">iSeries HW</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="iHSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="iHDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="iHDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">iSeries SW</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="ISSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="ISDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="ISDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select></td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Power HW</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="PHSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="PHDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="PHDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Power SW</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="PSSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="PSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="PSDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">x86 HW</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="XHSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="XHDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="XHDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last">
+     </td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">x86 SW</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="XSSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="XSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select></td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="XSDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Storage</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="StSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="StDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="StDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Networking</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="NeSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="NeDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="NeDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+
+
+    <tr class="even pointer">
+     <td rowspan="12">Industry</td>
+     <td class=" ">Banking</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="BaSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="BaDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="BaDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Insurance</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="InSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="InDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="InDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">FSS</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="FSSDoption1">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="FSDoption1">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="FSDtoptinon1">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Government</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="GoSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="GoDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="GpDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+
+    <tr class="even pointer">
+     <td class=" ">Retail</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="ReSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="ReDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="ReDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Telecom</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="TeSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="TeDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="TeDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Travel & Transportation</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="TTSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="TTDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="TTDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Healcare</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="HeSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="HeDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="HeDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+
+    <tr class="even pointer">
+     <td class=" ">Retail</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="ReSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="ReDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="ReDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Media & Entertainment</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="MESDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="MEDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="MEDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Education</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="EdSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="EdDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="EdDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+    <tr class="even pointer">
+     <td class=" ">Others
+      (Please specify in the Remarks Cell)</td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="OPSDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="OPDoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class=" " bgcolor="#FFFF00">
+      <select name="OPDtoption">
+       <option value="N">N</option>
+       <option value="Y">Y</option>
+      </select>
+     </td>
+     <td class="a-right a-right " bgcolor="#FFFF00"><input type="text"></td>
+     <td class=" last"></td>
+    </tr>
+   </table>
+  </div>
+     <div><input type="submit" value="SUBMIT ALL" id="submit"></div>
+     </form>
+ </div>
+</div>
+<% include footer.ejs %>
